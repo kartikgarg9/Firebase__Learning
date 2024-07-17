@@ -1,5 +1,3 @@
-/////////////////////////////////////////////////Delete a batch of query////////////////////////////////////////////////////
-
 const db = require("../db");
 
 /**
@@ -11,6 +9,7 @@ const db = require("../db");
 const deleteBatch = async (collectionPath, batchSize) => {
   const collectionRef = db.collection(collectionPath);
   const query = collectionRef.limit(batchSize);
+
   try {
     const snapshot = await query.get();
 
@@ -21,20 +20,26 @@ const deleteBatch = async (collectionPath, batchSize) => {
 
     let batch = db.batch();
 
+    // Iterate over each document in the snapshot
     for (const doc of snapshot.docs) {
-      if (batchSize >= 499) {
+      // Add document to the batch delete operation
+      batch.delete(doc.ref);
+
+      // Commit the batch if batchSize limit is reached (Firestore limit is 500 operations per batch)
+      if (batch._opCount >= 499) {
         await batch.commit();
         batch = db.batch();
-        batchSize = 0;
       }
-      batchSize = batchSize + 1;
-      batch.delete(doc.ref);
     }
 
-    await batch.commit();
+    // Commit the final batch
+    if (batch._opCount > 0) {
+      await batch.commit();
+    }
+
     console.log(`Successfully deleted ${snapshot.size} documents.`);
 
-    // Recursively delete the next batch of documents
+    // Recursively call deleteBatch to delete the next batch of documents
     process.nextTick(() => {
       deleteBatch(collectionPath, batchSize);
     });
