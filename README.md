@@ -69,34 +69,42 @@ Before you begin, ensure you have met the following requirements:
    firebase deploy
    ```
 
-### [`collectionCount.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/collectionCount.js)
+### [`collectionCount.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/collectionCount.js)
 
 This file contains a utility function to count the number of documents in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/createDoc.js)
 
 This file contains a utility function to create documents in a Firestore collection.
 
-### [`createInbulk.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createInbulk.js)
+### [`createInbulk.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/createInbulk.js)
 
-This file contains a utility function to create bulk documents in a Firestore collection.
+This file contains a utility function to create a batch documents in a Firestore collection.
 
 ### [`delBatch.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/delBatch.js)
 
-This file contains a utility function to create documents in a Firestore collection.
+This file contains a utility function to delete a batch of documents in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/deleteDoc.js)
 
-This file contains a utility function to create documents in a Firestore collection.
+This file contains a utility function to delete documents in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/findUser.js)
 
-This file contains a utility function to create documents in a Firestore collection.
+This file contains a utility function to find user in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/incDoc.js)
 
-This file contains a utility function to create documents in a Firestore collection.
+This file contains a utility function to increase field value in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/object.js)
 
-This file contains a utility function to create documents in a Firestore collection.
+This file contains a utility function to create an object in a Firestore collection.
+
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/sumOfId.js)
+
+This file contains a utility function to sum of a field value in a Firestore collection.
+
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/updateDoc.js)
+
+This file contains a utility function to update a document in a Firestore collection.
