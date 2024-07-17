@@ -85,26 +85,26 @@ This file contains a utility function to create a batch documents in a Firestore
 
 This file contains a utility function to delete a batch of documents in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/deleteDoc.js)
+### [`deleteDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/deleteDoc.js)
 
 This file contains a utility function to delete documents in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/findUser.js)
+### [`findUser.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/findUser.js)
 
 This file contains a utility function to find user in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/incDoc.js)
+### [`incDoc.js.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/incDoc.js)
 
 This file contains a utility function to increase field value in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/object.js)
+### [`object.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/object.js)
 
 This file contains a utility function to create an object in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/sumOfId.js)
+### [`sumOfId.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/sumOfId.js)
 
 This file contains a utility function to sum of a field value in a Firestore collection.
 
-### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/updateDoc.js)
+### [`updateDoc.js.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/updateDoc.js)
 
 This file contains a utility function to update a document in a Firestore collection.
