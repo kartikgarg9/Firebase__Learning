@@ -68,35 +68,29 @@ Before you begin, ensure you have met the following requirements:
    ```sh
    firebase deploy
    ```
+## Utility Functions in `hello` Folder
 
-### Example Commands
+### [`index.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/index.js)
 
-- Adding a new user to Firestore:
+- [`getUser(id)`](#getuser): Retrieves user data by ID.
+- [`updateUser(id, data)`](#updateuser): Updates user data.
+- [`deleteUser(id)`](#deleteuser): Deletes user data.
 
-  ```js
-  const { initializeApp, cert } = require("firebase-admin/app");
-  const { getFirestore } = require("firebase-admin/firestore");
+### [`other-file.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/other-file.js)
 
-  const serviceAccount = require("./service-account.json");
+- [`calculateAge(birthDate)`](#calculateage): Calculates the age based on the birth date.
+- [`formatName(firstName, lastName)`](#formatname): Formats a full name.
 
-  initializeApp({
-    credential: cert(serviceAccount),
-  });
+### `index.js` Utility Functions
 
-  const db = getFirestore();
+#### `getUser(id)`
 
-  const user = {
-    name: "John Doe",
-    email: "john.doe@example.com",
-  };
+Function to retrieve user data by ID.
 
-  db.collection("users")
-    .add(user)
-    .then((docRef) => {
-      console.log("Document written with ID: ", docRef.id);
-    })
-    .catch((error) => {
-      console.error("Error adding document: ", error);
-    });
+```javascript
+function getUser(id) {
+  // Implementation to fetch user data from Firestore
+}
+
   ```
 
