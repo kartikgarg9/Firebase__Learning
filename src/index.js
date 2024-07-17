@@ -1,7 +1,6 @@
-const db = require("./db");
-const getSumOfIds = require("./hello/sumOfId.js");
+const db = require("../db.js");
 const createInBulk = require("./hello/createInbulk.js");
-const userData = require("./mockdata/users.json");
+const userData = require("../mockdata/users.json");
 const deleteBatch = require("./hello/delBatch.js");
 const deleteDocument = require("./hello/deleteDoc.js");
 const findUsersWithIdGreaterThan = require("./hello/findUser.js");
@@ -9,7 +8,7 @@ const incrementId = require("./hello/incDoc.js");
 const xyz = require("./hello/createDoc.js");
 const updateDocument = require("./hello/updateDoc.js");
 const object = require("./hello/object.js");
-const getCollectionCount = require("./hello/collectionCount.js");
+const getSumOfIds = require("./hello/sumOfId.js");
 
 // getSumOfIds(db, "users/hello/new-users");
 // createInBulk(userData);

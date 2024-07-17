@@ -10,7 +10,7 @@ A repository for learning and experimenting with Firebase, including Firestore, 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
+- [Contributing](#contributing)git
 - [License](#license)
 - [Contact](#contact)
 
@@ -69,33 +69,34 @@ Before you begin, ensure you have met the following requirements:
    firebase deploy
    ```
 
-### Example Commands
+### [`collectionCount.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/collectionCount.js)
 
-- Adding a new user to Firestore:
+This file contains a utility function to count the number of documents in a Firestore collection.
 
-  ```js
-  const { initializeApp, cert } = require("firebase-admin/app");
-  const { getFirestore } = require("firebase-admin/firestore");
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
 
-  const serviceAccount = require("./service-account.json");
+This file contains a utility function to create documents in a Firestore collection.
 
-  initializeApp({
-    credential: cert(serviceAccount),
-  });
+### [`createInbulk.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createInbulk.js)
 
-  const db = getFirestore();
+This file contains a utility function to create bulk documents in a Firestore collection.
 
-  const user = {
-    name: "John Doe",
-    email: "john.doe@example.com",
-  };
+### [`delBatch.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/src/hello/delBatch.js)
 
-  db.collection("users")
-    .add(user)
-    .then((docRef) => {
-      console.log("Document written with ID: ", docRef.id);
-    })
-    .catch((error) => {
-      console.error("Error adding document: ", error);
-    });
-  ```
+This file contains a utility function to create documents in a Firestore collection.
+
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+
+This file contains a utility function to create documents in a Firestore collection.
+
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+
+This file contains a utility function to create documents in a Firestore collection.
+
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+
+This file contains a utility function to create documents in a Firestore collection.
+
+### [`createDoc.js`](https://github.com/kartikgarg9/Firebase__Learning/blob/main/hello/createDoc.js)
+
+This file contains a utility function to create documents in a Firestore collection.
