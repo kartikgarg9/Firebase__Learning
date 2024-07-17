@@ -10,7 +10,7 @@ A repository for learning and experimenting with Firebase, including Firestore, 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)git 
+- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
